@@ -50,12 +50,22 @@ const styles = StyleSheet.create({
     marginBottom: 12,
   },
   text:{
-
+    color: '#A1A1A1',
   },
   button:{
-
+    position: 'absolute',
+    backgroundColor: '#A3369A',
+    borderRadius: 50,
+    paddingVertical: 8,
+    width: '60%',
+    alignSelf: 'center',
+    bottom: '15%',
+    alignItems: 'center',
+    justifyContent: 'center',
   },
   buttonText:{
-
+    fontSize: 18,
+    color: '#FFF',
+    fontWeight: 'bold',
   }
 })
