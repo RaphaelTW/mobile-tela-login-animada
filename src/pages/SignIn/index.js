@@ -4,7 +4,7 @@ import * as Animatable from 'react-native-animatable'
 
 export default function SignIn() {
  return (
-   <View style={StyleSheet.container}>
+   <View style={styles.container}>
         <Animatable.View animation="fadeInLeft" delay={500} style={styles.containerHeader}>
             <Text style={styles.message}>Bem-vindo(a)</Text>
         </Animatable.View>
@@ -27,7 +27,7 @@ export default function SignIn() {
               </TouchableOpacity>
 
               <TouchableOpacity style={styles.buttonRegister}>
-                <Text style={styles.registerText}>Cadastre-se</Text>
+                <Text style={styles.registerText}>Não possui uma conta?  Cadastre-se</Text>
               </TouchableOpacity>
         </Animatable.View>
    </View>
@@ -36,30 +36,56 @@ export default function SignIn() {
 
 const styles = StyleSheet.create({
   container:{
-
+    flex: 1,
+    backgroundColor: '#A3369A',
   },
   containerHeader:{
-
+    marginTop: '14%',
+    marginBottom: '8%',
+    paddingStart: '5%',
   },
   message:{
-
+    fontSize: 28,
+    fontWeight: 'bold',
+    color: '#FFF',
   },
   containerForm: {
-
+    backgroundColor: '#FFF',
+    flex: 1,
+    borderTopLeftRadius: 25,
+    borderTopRightRadius: 25,
+    paddingStart: '5%',
+    paddingEnd: '5%',
+  },
+  title:{
+    fontSize: 20,
+    marginTop: 28,
   },
   input:{
-
+    borderBottomWidth: 1,
+    height: 40,
+    marginBottom: 12,
+    fontSize: 16,
   },
   button:{
-
+    backgroundColor: '#A3369A',
+    width: '100%',
+    borderRadius: 10,
+    paddingVertical: 8,
+    marginTop: 14,
+    justifyContent: 'center',
+    alignItems: 'center',
   },
   buttonText:{
-
+    color: '#FFF',
+    fontSize: 18,
+    fontWeight: 'bold',
   },
   buttonRegister:{
-
+    marginTop: 14,
+    alignItems: 'center',
   },
   registerText:{
-    
-  }
+    color: '#A1A1A1',
+  },
 })
